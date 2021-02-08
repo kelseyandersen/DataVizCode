@@ -8,7 +8,7 @@ library(ggsci)
 library(inauguration)
 
 # read data
-survey_data <- read_csv(here::here("data", "survey_clean.csv")) %>% 
+survey_data <- read_csv("https://raw.githubusercontent.com/emdelponte/paper-coffee-rust-Ethiopia/master/data/survey_clean.csv") %>% 
   select(-c(farm, region, zone, district, lon, lat))
 
 # prepare the data

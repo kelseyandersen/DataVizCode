@@ -72,7 +72,7 @@ library("here")
 
 
 ## --------------------------------------------------------------------------------------------
-dt <- read_csv(here::here("data", "survey_clean.csv"))
+dt <- survey_data <- read_csv("https://raw.githubusercontent.com/emdelponte/paper-coffee-rust-Ethiopia/master/data/survey_clean.csv")
 tibble::glimpse(dt, 70)
 
 
