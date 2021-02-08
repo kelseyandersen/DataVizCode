@@ -3,9 +3,8 @@
 # Packages
 
 library(tidyverse)
-library(patchwork)
 library(ggsci)
-
+library(here)
 
 # read data
 survey_data <- read_csv("https://raw.githubusercontent.com/emdelponte/paper-coffee-rust-Ethiopia/master/data/survey_clean.csv") %>% 
@@ -79,7 +78,7 @@ ggsave(
 
 # 1 slide
 
-survey_data <- read.csv("survey_clean.csv") %>% 
+survey_data <- read_csv("https://raw.githubusercontent.com/emdelponte/paper-coffee-rust-Ethiopia/master/data/survey_clean.csv") %>% 
   select(-c(farm, region, zone, district, lon, lat))
 
 head(survey_data)
@@ -290,8 +289,6 @@ p + scale_color_brewer(
 p + ggsci::scale_color_npg()
 
 p + ggsci::scale_color_aaas()
-
-inauguration::inauguration("bernie_mittens")
 
 
 # slide 5
