@@ -5,7 +5,7 @@
 library(tidyverse)
 library(patchwork)
 library(ggsci)
-library(inauguration)
+
 
 # read data
 survey_data <- read_csv("https://raw.githubusercontent.com/emdelponte/paper-coffee-rust-Ethiopia/master/data/survey_clean.csv") %>% 

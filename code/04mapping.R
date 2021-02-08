@@ -6,7 +6,6 @@ library(readr)
 library(sf)
 library(stringr)
 
-
 ## ----download-GADM, message=FALSE, warning=FALSE--------------------------------------------------
 # Remote file information
 u_remote <- "https://biogeo.ucdavis.edu/"
